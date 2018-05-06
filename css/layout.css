@@ -1,0 +1,46 @@
+.side-nav-container {
+  position: fixed;
+  float: left;
+  background: #f5f5f5;
+  padding: 0 70px;
+}
+
+.side-nav-container .side-nav {
+  height: 100vh;
+  margin: 0;
+}
+
+.side-nav-container .side-nav li {
+  width: 200px;
+  list-style-type: none;
+  padding: 16px 0;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.side-nav-container .side-nav li:first-child {
+  padding: 0 0 16px;
+}
+
+.side-nav-container .side-nav li a {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #999999;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.side-nav-container .side-nav li a:hover {
+  color: #000;
+}
+
+.side-nav-container .page-logo {
+  padding: 77px 0 67px 0;
+}
+
+.side-nav-container .page-logo img {
+  width: 170px;
+  height: 51px;
+}
+/*# sourceMappingURL=layout.css.map */

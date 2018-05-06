@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#intro {
+  background: url("https://demo.goodlayers.com/infinite/homepages/onepage/wp-content/uploads/sites/2/2016/05/bg-1.jpg") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  padding: 0 40px;
+}
+
+#services {
+  background: #2D9BEA;
+}
+/*# sourceMappingURL=app.css.map */
