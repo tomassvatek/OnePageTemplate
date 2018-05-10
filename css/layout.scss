@@ -2,14 +2,14 @@ $white-color: #fff;
 $black-color: #000;
 $nav-color: #999999;
 $nav-background-color: #f5f5f5;
-$raleway-font: 'Raleway', sans-serif;
-
+$social-icon-color: #545454;
+$raleway-font: 'Raleway',
+sans-serif;
 .side-nav-container {
     position: fixed;
     float: left;
     background: $nav-background-color;
     padding: 0 70px;
-    
     .side-nav {
         height: 100vh;
         margin: 0;
@@ -25,7 +25,7 @@ $raleway-font: 'Raleway', sans-serif;
                 display: block;
                 font-family: $raleway-font;
                 font-size: 13px;
-                font-weight: bold;
+                font-weight: 800;
                 color: $nav-color;
                 text-transform: uppercase;
                 letter-spacing: 0.5px;
@@ -35,7 +35,6 @@ $raleway-font: 'Raleway', sans-serif;
             }
         }
     }
-
     .page-logo {
         padding: 77px 0 67px 0;
         img {
@@ -43,4 +42,27 @@ $raleway-font: 'Raleway', sans-serif;
             height: 51px;
         }
     }
+    .sth {
+        position: absolute;
+        bottom: 200px;
+        margin: 0 auto;
+        li {
+            display: inline-block;
+            a {
+                i {
+                    font-size: 14px;
+                    margin-right: 25px;
+                    color: $social-icon-color;
+                    opacity: 1;
+                    &:last-item {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.grid-container.full {
+    margin-left: 340px;
 }

@@ -4,11 +4,76 @@
   padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
 #intro {
   background: url("https://demo.goodlayers.com/infinite/homepages/onepage/wp-content/uploads/sites/2/2016/05/bg-1.jpg") no-repeat center;
+  background-attachment: fixed;
   background-size: cover;
   height: 100vh;
-  padding: 0 40px;
+  padding: 90px 40px 30px 40px;
+  color: #fff;
+}
+
+#intro h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 140px;
+  font-weight: 700;
+  padding: 0 15px 60px 15px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+
+#intro h3 {
+  font-size: 36px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 0 15px;
+}
+
+#intro .intro-box {
+  margin-right: 40px;
+  margin-bottom: 30px;
+}
+
+#intro .intro-box.last {
+  margin-right: 0;
+}
+
+#intro .intro-box h5 {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  color: #2D9BEA;
+  text-transform: uppercase;
+}
+
+#intro .intro-box p {
+  font-size: 15px;
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+#intro .intro-box .intro-box-icon {
+  margin-bottom: 28px;
+}
+
+#intro .intro-box .intro-box-icon i {
+  font-size: 30px;
 }
 
 #services {
