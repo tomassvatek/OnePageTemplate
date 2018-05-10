@@ -3,17 +3,23 @@ $black-color: #000;
 $nav-color: #999999;
 $nav-background-color: #f5f5f5;
 $services-background: #2D9BEA;
-
-$raleway-font: 'Raleway', sans-serif;
-$source-sans-font: 'Source Sans Pro', sans-serif;
-
+$raleway-font: 'Raleway',
+sans-serif;
+$source-sans-font: 'Source Sans Pro',
+sans-serif;
+$break-tablet: 768px;
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: $raleway-font;
     margin: 0;
 }
@@ -29,56 +35,65 @@ p {
 #intro {
     background: url('https://demo.goodlayers.com/infinite/homepages/onepage/wp-content/uploads/sites/2/2016/05/bg-1.jpg') no-repeat center;
     background-attachment: fixed;
-    background-size: cover;
-    height: 100vh;
-    padding: 90px 40px 30px 40px;
+    background-size: cover; //height: 100vh;
     color: $white-color;
-
-    h1 {
-        font-family: $raleway-font;
-        font-size: 140px;
-        font-weight: 700;
-        padding: 0 15px 60px 15px;
-        text-transform: uppercase;
-        line-height: 1.2;
-        letter-spacing: 1px;
-    }
-
-    h3 {
-        font-size: 36px;
-        font-weight: 300;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        padding: 0 15px;
-    }
-
-    .intro-box {
-        margin-right: 40px;
-        margin-bottom: 30px;
-
-        &.last {
-            margin-right: 0;
-        }
-
-        h5 {
-            font-size: 16px;
-            font-weight: 600;
-            letter-spacing: 1px;
-            margin-bottom: 20px;
-            color: $services-background;
+    margin-top: 82px;
+    .intro-wrapper {
+        padding: 90px 0 0 0;
+        width: 95%;
+        margin: 0 auto;
+        h1 {
+            font-family: $raleway-font;
+            font-size: 40px;
+            font-weight: 700;
+            padding: 0 15px 60px 15px;
             text-transform: uppercase;
+            line-height: 1.2;
+            letter-spacing: 1px;
+            @media screen and (min-width: $break-tablet) {
+                font-size: 140px;
+            }
         }
-
-        p {
-            font-size: 15px;
-            margin-bottom: 20px;
-            line-height: 1.7;
+        h3 {
+            font-size: 36px;
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 0 15px;
         }
-
-        .intro-box-icon {
-            margin-bottom: 28px;
-            i {
-                font-size: 30px;
+        .intro-box {
+            margin: 0 40px 30px 0;
+            padding: 0 15px;
+            &.last {
+                margin-right: 0;
+            }
+            h5 {
+                font-size: 16px;
+                font-weight: 600;
+                letter-spacing: 1px;
+                margin-bottom: 20px;
+                color: $services-background;
+                text-transform: uppercase;
+            }
+            p {
+                font-size: 15px;
+                margin-bottom: 20px;
+                line-height: 1.7;
+            }
+            .intro-box-icon {
+                margin-bottom: 28px;
+                i {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+    @media screen and (min-width: $break-tablet) {
+        margin-top: 0;
+        .intro-wrapper {
+            width: 90%;
+            h1 {
+                font-size: 140px;
             }
         }
     }
@@ -86,4 +101,40 @@ p {
 
 #services {
     background: $services-background;
+    padding: 120px 0;
+    .accordion {
+        width: 70%;
+        background: none;
+    }
+    .accordion-title {
+        font-family: $raleway-font;
+        font-size: 14px;
+        font-weight: 600;
+        color: $white-color;
+        background:$services-background;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        border: none;
+    }
+
+    .accordion-content {
+        color: #c6def1;
+        background: $services-background;
+        border: none;
+        p {
+            font-size: 15px;
+            line-height: 1.7;
+            padding: 5px 0 15px;
+        }
+    }
+
+    .accordion-title::before {
+        display: inline-block;
+        font-size: 30px;
+        font-weight: 200;
+        background: #308acb;
+        padding: 8px 15px;
+        max-width: 44px;
+    }
 }
