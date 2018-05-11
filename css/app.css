@@ -1,5 +1,5 @@
 * {
-  box-sizing: border-box;
+  blue-box-sizing: border-blue-box;
   margin: 0;
   padding: 0;
 }
@@ -27,16 +27,12 @@ p {
   background-attachment: fixed;
   background-size: cover;
   color: #fff;
+  padding: 90px 0 30px;
   margin-top: 82px;
+  min-height: 100vh;
 }
 
-#intro .intro-wrapper {
-  padding: 90px 0 0 0;
-  width: 95%;
-  margin: 0 auto;
-}
-
-#intro .intro-wrapper h1 {
+#intro h1 {
   font-family: "Raleway", sans-serif;
   font-size: 40px;
   font-weight: 700;
@@ -47,12 +43,12 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-  #intro .intro-wrapper h1 {
+  #intro h1 {
     font-size: 140px;
   }
 }
 
-#intro .intro-wrapper h3 {
+#intro h3 {
   font-size: 36px;
   font-weight: 300;
   letter-spacing: 2px;
@@ -60,16 +56,16 @@ p {
   padding: 0 15px;
 }
 
-#intro .intro-wrapper .intro-box {
+#intro .intro-blue-box {
   margin: 0 40px 30px 0;
   padding: 0 15px;
 }
 
-#intro .intro-wrapper .intro-box.last {
+#intro .intro-blue-box.last {
   margin-right: 0;
 }
 
-#intro .intro-wrapper .intro-box h5 {
+#intro .intro-blue-box h5 {
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 1px;
@@ -78,17 +74,17 @@ p {
   text-transform: uppercase;
 }
 
-#intro .intro-wrapper .intro-box p {
+#intro .intro-blue-box p {
   font-size: 15px;
   margin-bottom: 20px;
   line-height: 1.7;
 }
 
-#intro .intro-wrapper .intro-box .intro-box-icon {
+#intro .intro-blue-box .intro-blue-box-icon {
   margin-bottom: 28px;
 }
 
-#intro .intro-wrapper .intro-box .intro-box-icon i {
+#intro .intro-blue-box .intro-blue-box-icon i {
   font-size: 30px;
 }
 
@@ -107,10 +103,10 @@ p {
 #services {
   background: #2D9BEA;
   padding: 120px 0;
+  min-height: 100vh;
 }
 
 #services .accordion {
-  width: 70%;
   background: none;
 }
 
@@ -140,10 +136,103 @@ p {
 
 #services .accordion-title::before {
   display: inline-block;
+  top: 15px;
+  left: -60px;
   font-size: 30px;
   font-weight: 200;
   background: #308acb;
   padding: 8px 15px;
-  max-width: 44px;
+  width: 52.11px;
+  text-align: center;
+}
+
+#services .is-active .accordion-title::before {
+  background: none;
+  border: 2px solid #308acb;
+}
+
+#statistic {
+  background: url("https://demo.goodlayers.com/infinite/homepages/onepage/wp-content/uploads/sites/2/2016/05/bg-2.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 160px 0 110px;
+  color: white;
+  line-height: 1.7;
+}
+
+#statistic .statistic-item {
+  padding: 0 15px 30px;
+  text-align: center;
+}
+
+#statistic .statistic-item h4 {
+  font-family: "Raleway", sans-serif;
+  font-size: 45px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+#statistic .statistic-item h5 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+#statistic .statistic-item .divider {
+  display: block;
+  width: 20px;
+  margin: 0px auto 25px;
+  border-color: #fff;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+
+#benefit {
+  color: #fff;
+}
+
+#benefit .benefit-item {
+  padding: 75px 80px 50px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+#benefit .benefit-item .benefit-item-icon {
+  margin-bottom: 28px;
+}
+
+#benefit .benefit-item h4 {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  padding-top: 5px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#benefit .benefit-item h6 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  margin: 5px 0 27px;
+}
+
+#benefit .benefit-item p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+#benefit .blue {
+  background: #4FA3E0;
+}
+
+#benefit .red {
+  background: #EF5D5D;
+}
+
+#benefit .purple {
+  background: #915FD5;
 }
 /*# sourceMappingURL=app.css.map */

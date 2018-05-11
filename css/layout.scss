@@ -14,6 +14,7 @@ $break-tablet: 768px;
     width: 100%;
     position: fixed;
     background: $nav-background-color;
+    z-index: 100;
     #header {
         position: relative;
         background: $nav-background-color;
@@ -118,6 +119,16 @@ $break-tablet: 768px;
                 }
             }
         }
+    }
+}
+
+.wrapper {
+    max-width: 550px;
+    padding: 0 15px;
+    margin: 0 auto;
+    @media screen and(min-width: $break-tablet) {
+        max-width: 1180px;
+        padding: 0 40px;
     }
 }
 

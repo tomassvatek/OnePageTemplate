@@ -2,6 +2,7 @@
   width: 100%;
   position: fixed;
   background: #f5f5f5;
+  z-index: 100;
 }
 
 .side-nav-container #header {
@@ -117,6 +118,19 @@
   }
   .side-nav-container .side-nav-social li a i:last-item {
     margin-right: 0;
+  }
+}
+
+.wrapper {
+  max-width: 550px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    max-width: 1180px;
+    padding: 0 40px;
   }
 }
 
