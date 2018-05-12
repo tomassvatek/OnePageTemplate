@@ -23,6 +23,19 @@ p {
   font-family: "Source Sans Pro", sans-serif;
 }
 
+.section-main-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.section-secondary-title {
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: italic;
+  letter-spacing: 0.8px;
+}
+
 #intro {
   background: url("https://demo.goodlayers.com/infinite/homepages/onepage/wp-content/uploads/sites/2/2016/05/bg-1.jpg") no-repeat center;
   background-attachment: fixed;
@@ -327,6 +340,273 @@ p {
   transform: rotateY(180deg);
 }
 
+#works {
+  padding: 95px 0 60px 0;
+  background: #f3f3f3;
+}
+
+#works .work-title h3 {
+  font-size: 41px;
+  color: #0a0a0a;
+}
+
+#works .work-title h5 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #747474;
+}
+
+#framework {
+  padding: 110px 0px 55px 0px;
+}
+
+#framework .framework-content {
+  padding: 0 10px;
+  text-align: center;
+}
+
+#framework .framework-content .framework-content-title {
+  padding: 0 15px 15px;
+  margin-bottom: 42px;
+}
+
+#framework .framework-content .framework-content-title h3 {
+  font-size: 39px;
+  margin-bottom: 22px;
+  color: #383838;
+}
+
+#framework .framework-content .framework-content-title h5 {
+  font-size: 16px;
+  margin-bottom: 13px;
+  color: #747474;
+}
+
+#framework .framework-content p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 0 15px 30px;
+  margin-bottom: 20px;
+  line-height: 1.7;
+  color: #9b9b9b;
+}
+
+#framework .framework-graph {
+  padding: 0 15px 15px 25px;
+}
+
+#framework .framework-graph .progress-container {
+  margin-top: 32px;
+}
+
+#framework .framework-graph .progress-container:first-child {
+  margin-top: 0;
+}
+
+#framework .framework-graph .progress-container .progress-label {
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+  color: #505050;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  line-height: 1.7;
+}
+
+#framework .framework-graph .progress-container .progress-label .progress-skill {
+  margin-right: 12px;
+}
+
+#framework .framework-graph .progress-container .progress-label .progress-percent {
+  float: right;
+}
+
+#news {
+  padding: 100px 15px 40px;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 1.7;
+  background: url("https://demo.goodlayers.com/infinite/homepages/onepage/wp-content/uploads/sites/2/2016/05/bg-5.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+#news .news-title {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+#news .news-title h3 {
+  font-size: 41px;
+}
+
+#news .news-title h5 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  margin-top: 5px;
+  color: #c9c9c9;
+}
+
+#news .news-box {
+  padding: 0 15px 30px;
+}
+
+#news .news-box .news-box-img {
+  margin-bottom: 27px;
+}
+
+#news .news-box .news-box-content .news-box-content-date {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.5;
+  word-spacing: 2.5;
+  margin-bottom: 7px;
+  text-transform: uppercase;
+  color: #c9c9c9;
+}
+
+#news .news-box .news-box-content a h6 {
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+#news .news-box .news-box-content p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+#news .news-box .news-box-nav {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-top: 1px solid #919191;
+  padding-top: 12px;
+  margin-left: 0;
+  color: #c9c9c9;
+}
+
+#news .news-box .news-box-nav li {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+#news .news-box .news-box-nav li:last-child {
+  margin-right: 0;
+}
+
+#news .news-box .news-box-nav li a {
+  color: inherit;
+}
+
+#news .news-box .news-box-nav li span {
+  margin-right: 13px;
+}
+
+#team {
+  padding: 80px 0 30px;
+}
+
+#team h3 {
+  font-size: 41px;
+  color: #383838;
+  margin-bottom: 22px;
+}
+
+#team h4 {
+  font-size: 19px;
+  color: #747474;
+  margin-bottom: 13px;
+}
+
+#team .team-box {
+  margin-bottom: 50px;
+}
+
+#team .team-box .team-box-img {
+  overflow: hidden;
+}
+
+#team .team-box .team-box-img img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: all linear 0.2s;
+}
+
+#team .team-box .team-box-img img:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+#team .team-box .team-box-content {
+  margin: 37px 0 0 33px;
+}
+
+#team .team-box .team-box-content h5 {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #383838;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+#team .team-box .team-box-content h6 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.2px;
+  font-style: italic;
+  color: #888888;
+  margin-bottom: 8px;
+}
+
+#team .team-box .team-box-content .divider {
+  border-bottom: 2px solid #e2e2e2;
+  width: 45px;
+  padding-top: 12px;
+}
+
+#team .team-box .team-box-content p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
+  margin: 20px 0;
+  line-height: 1.7;
+  color: #9b9b9b;
+}
+
+#team .team-box .team-box-content .team-box-social {
+  margin: 18px 0 12px;
+}
+
+#team .team-box .team-box-content .team-box-social li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+#team .team-box .team-box-content .team-box-social li:first-child {
+  margin-left: 0;
+}
+
+#team .team-box .team-box-content .team-box-social li a {
+  color: #545454;
+  text-align: left;
+}
+
+#team .team-box .team-box-content .team-box-social li a i {
+  font-size: 15px;
+}
+
 #support {
   background: #308acb;
   padding: 220px 0 160px 0;
@@ -340,10 +620,7 @@ p {
 }
 
 #support .support-content h3 {
-  font-family: "Raleway", sans-serif;
   font-size: 50px;
-  font-weight: 800;
-  letter-spacing: 2px;
 }
 
 #support .support-content h5 {
@@ -365,5 +642,50 @@ p {
 
 #support .support-content .button:hover {
   border: 1px solid #2d9bea;
+}
+
+#contact {
+  padding: 90px 0 110px 0;
+}
+
+#contact h3 {
+  font-size: 40px;
+  color: #383838;
+  text-align: center;
+  padding: 0 15px 30px;
+  text-transform: none;
+}
+
+#contact .contact-social {
+  text-align: center;
+  line-height: 1.7;
+}
+
+#contact .contact-social li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+#contact .contact-social li:first-child {
+  margin-left: 0;
+}
+
+#contact .contact-social li a {
+  font-size: 20px;
+  color: #545454;
+}
+
+#contact .contact-social li a span {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  margin-left: 15px;
+  letter-spacing: 1px;
+}
+
+#contact .contact-social #form input[type=text],
+#contact .contact-social #form input[type=email] {
+  padding: 0 7px;
+  margin-bottom: 14px;
 }
 /*# sourceMappingURL=app.css.map */

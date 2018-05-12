@@ -4517,7 +4517,7 @@ select {
   border-radius: 0;
   background-color: #cacaca; }
   .progress.primary .progress-meter {
-    background-color: #1779ba; }
+    background-color: #2D9BEA; }
   .progress.secondary .progress-meter {
     background-color: #767676; }
   .progress.success .progress-meter {
@@ -4532,7 +4532,8 @@ select {
   display: block;
   width: 0%;
   height: 100%;
-  background-color: #1779ba; }
+  background-color: #2D9BEA; 
+}
 
 .progress-meter-text {
   position: absolute;

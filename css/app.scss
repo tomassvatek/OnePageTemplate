@@ -36,6 +36,19 @@ p {
     font-family: $source-sans-font;
 }
 
+.section-main-title {
+    font-family: $raleway-font;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.section-secondary-title {
+    font-family: $source-sans-font;
+    font-style: italic;
+    letter-spacing: 0.8px;
+}
+
 #intro {
     background: url('https://demo.goodlayers.com/infinite/homepages/onepage/wp-content/uploads/sites/2/2016/05/bg-1.jpg') no-repeat center;
     background-attachment: fixed;
@@ -294,6 +307,237 @@ $flip-card-height: 653px;
     }
 }
 
+#works {
+    padding: 95px 0 60px 0;
+    background: #f3f3f3;
+    .work-title {
+        h3 {
+            font-size: 41px;
+            color: #0a0a0a;
+        }
+        h5 {
+            font-size: 16px;
+            margin-bottom: 5px;
+            color: #747474;
+        }
+    }
+}
+
+#framework {
+    padding: 110px 0px 55px 0px;
+    .framework-content {
+        padding: 0 10px;
+        text-align: center;
+        .framework-content-title {
+            padding: 0 15px 15px;
+            margin-bottom: 42px;
+            h3 {
+                font-size: 39px;
+                margin-bottom: 22px;
+                color: #383838;
+            }
+            h5 {
+                font-size: 16px;
+                margin-bottom: 13px;
+                color: #747474;
+            }
+        }
+        p {
+            font-family: $source-sans-font;
+            font-size: 16px;
+            font-weight: 300;
+            padding: 0 15px 30px;
+            margin-bottom: 20px;
+            line-height: 1.7;
+            color: #9b9b9b;
+        }
+    }
+    .framework-graph {
+        padding: 0 15px 15px 25px;
+        .progress-container {
+            margin-top: 32px;
+            &:first-child {
+                margin-top: 0;
+            }
+            .progress-label {
+                font-size: 15px;
+                font-weight: 600;
+                font-family: $raleway-font;
+                color: #505050;
+                letter-spacing: 1px;
+                margin-bottom: 12px;
+                text-transform: uppercase;
+                line-height: 1.7;
+                .progress-skill {
+                    margin-right: 12px;
+                }
+                .progress-percent {
+                    float: right;
+                }
+            }
+        }
+    }
+}
+
+#news {
+    padding: 100px 15px 40px;
+    font-family: $source-sans-font;
+    line-height: 1.7;
+    background: url("https://demo.goodlayers.com/infinite/homepages/onepage/wp-content/uploads/sites/2/2016/05/bg-5.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: $white-color;
+    .news-title {
+        margin-bottom: 60px;
+        text-align: center;
+        h3 {
+            font-size: 41px;
+        }
+        h5 {
+            font-family: $source-sans-font;
+            font-size: 16px;
+            margin-top: 5px;
+            color: #c9c9c9;
+        }
+    }
+    .news-box {
+        padding: 0 15px 30px;
+        .news-box-img {
+            margin-bottom: 27px;
+        }
+        .news-box-content {
+            .news-box-content-date {
+                font-family: $source-sans-font;
+                font-size: 13px;
+                font-weight: 600;
+                letter-spacing: 1.5;
+                word-spacing: 2.5;
+                margin-bottom: 7px;
+                text-transform: uppercase;
+                color: #c9c9c9;
+            }
+            a {
+                h6 {
+                    font-family: $raleway-font;
+                    font-size: 25px;
+                    font-weight: 800;
+                    margin-bottom: 20px;
+                    line-height: 1.2;
+                    color: $white-color;
+                }
+            }
+            p {
+                font-family: $source-sans-font;
+                font-size: 15px;
+                line-height: 1.7;
+                margin-bottom: 20px;
+            }
+        }
+        .news-box-nav {
+            font-family: $source-sans-font;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-top: 1px solid #919191;
+            padding-top: 12px;
+            margin-left: 0;
+            color: #c9c9c9;
+            li {
+                display: inline-block;
+                margin-right: 25px;
+                &:last-child {
+                    margin-right: 0;
+                }
+                a {
+                    color: inherit;
+                }
+                span {
+                    margin-right: 13px;
+                }
+            }
+        }
+    }
+}
+
+#team {
+    padding: 80px 0 30px;
+    h3 {
+        font-size: 41px;
+        color: #383838;
+        margin-bottom: 22px;
+    }
+    h4 {
+        font-size: 19px;
+        color: #747474;
+        margin-bottom: 13px;
+    }
+    .team-box {
+        margin-bottom: 50px;
+        .team-box-img {
+            overflow: hidden;
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                transition: all linear 0.2s;
+                &:hover {
+                    transform: scale(1.05);
+                    opacity: 0.9;
+                }
+            }
+        }
+        .team-box-content {
+            margin: 37px 0 0 33px;
+            h5 {
+                font-family: $raleway-font;
+                font-size: 16px;
+                font-weight: 600;
+                color: #383838;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin-bottom: 8px;
+            }
+            h6 {
+                font-family: $source-sans-font;
+                font-size: 13px;
+                letter-spacing: 0.2px;
+                font-style: italic;
+                color: #888888;
+                margin-bottom: 8px;
+            }
+            .divider {
+                border-bottom: 2px solid #e2e2e2;
+                width: 45px;
+                padding-top: 12px;
+            }
+            p {
+                font-family: $source-sans-font;
+                font-size: 15px;
+                margin: 20px 0;
+                line-height: 1.7;
+                color: #9b9b9b;
+            }
+            .team-box-social {
+                margin: 18px 0 12px;
+                li {
+                    display: inline-block;
+                    margin-left: 20px;
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                    a {
+                        color: #545454;
+                        text-align: left;
+                        i {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 #support {
     background: #308acb;
     padding: 220px 0 160px 0;
@@ -303,17 +547,13 @@ $flip-card-height: 653px;
         padding: 0 15px 30px;
         text-align: center;
         h3 {
-            font-family: $raleway-font;
             font-size: 50px;
-            font-weight: 800;
-            letter-spacing: 2px;
         }
         h5 {
             font-family: $raleway-font;
             font-size: 19px;
             margin-top: 16px;
         }
-
         .button {
             font-size: 13px;
             font-weight: 700;
@@ -325,6 +565,46 @@ $flip-card-height: 653px;
             padding: 20px 33px;
             &:hover {
                 border: 1px solid #2d9bea;
+            }
+        }
+    }
+}
+
+#contact {
+    padding: 90px 0 110px 0;
+    h3 {
+        font-size: 40px;
+        color: #383838;
+        text-align: center;
+        padding: 0 15px 30px;
+        text-transform: none;
+    }
+    .contact-social {
+        text-align: center;
+        line-height: 1.7;
+        li {
+            display: inline-block;
+            margin-left: 40px;
+            &:first-child {
+                margin-left: 0;
+            }
+            a {
+                font-size: 20px;
+                color: #545454;
+                span {
+                    font-family: $source-sans-font;
+                    font-size: 15px;
+                    font-weight: 400;
+                    margin-left: 15px;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+        #form {
+            input[type=text],
+            input[type=email] {
+                padding: 0 7px;
+                margin-bottom: 14px;
             }
         }
     }
