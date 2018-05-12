@@ -1,5 +1,6 @@
 * {
-  blue-box-sizing: border-blue-box;
+  -webkit-box-sizing: border-blue-box;
+  box-sizing: border-blue-box;
   margin: 0;
   padding: 0;
 }
@@ -56,16 +57,16 @@ p {
   padding: 0 15px;
 }
 
-#intro .intro-blue-box {
+#intro .intro-box {
   margin: 0 40px 30px 0;
   padding: 0 15px;
 }
 
-#intro .intro-blue-box.last {
+#intro .intro-box.last {
   margin-right: 0;
 }
 
-#intro .intro-blue-box h5 {
+#intro .intro-box h5 {
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 1px;
@@ -74,17 +75,17 @@ p {
   text-transform: uppercase;
 }
 
-#intro .intro-blue-box p {
+#intro .intro-box p {
   font-size: 15px;
   margin-bottom: 20px;
   line-height: 1.7;
 }
 
-#intro .intro-blue-box .intro-blue-box-icon {
+#intro .intro-box .intro-box-icon {
   margin-bottom: 28px;
 }
 
-#intro .intro-blue-box .intro-blue-box-icon i {
+#intro .intro-box .intro-box-icon i {
   font-size: 30px;
 }
 
@@ -142,7 +143,7 @@ p {
   font-weight: 200;
   background: #308acb;
   padding: 8px 15px;
-  width: 52.11px;
+  width: 52px;
   text-align: center;
 }
 
@@ -202,6 +203,13 @@ p {
   margin-bottom: 28px;
 }
 
+#benefit .benefit-item .benefit-item-icon i {
+  font-size: 25px;
+  padding: 17px;
+  background: #2e2e2e;
+  border-radius: 50%;
+}
+
 #benefit .benefit-item h4 {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -234,5 +242,128 @@ p {
 
 #benefit .purple {
   background: #915FD5;
+}
+
+.flip-card-container {
+  position: relative;
+  width: 250px;
+}
+
+.flip-card-container .flip-card {
+  perspective: 1000;
+  position: absolute;
+  width: 100%;
+  backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  padding: 60px 50px 40px;
+}
+
+.flip-card-container .flip-card:hover {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.flip-card-container .flip-card .flip-card-front,
+.flip-card-container .flip-card .flip-card-back {
+  position: absolute;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  color: white;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  line-height: 1.7;
+  opacity: 0.7;
+}
+
+.flip-card-container .flip-card .flip-card-front .flip-card-frame,
+.flip-card-container .flip-card .flip-card-back .flip-card-frame {
+  margin: 15px;
+  border: 2px solid #2a80be;
+}
+
+.flip-card-container .flip-card .flip-card-front .flip-card-content,
+.flip-card-container .flip-card .flip-card-back .flip-card-content {
+  padding: 60px 50px 40px;
+}
+
+.flip-card-container .flip-card .flip-card-front .flip-card-content h5,
+.flip-card-container .flip-card .flip-card-back .flip-card-content h5 {
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.flip-card-container .flip-card .flip-card-front .flip-card-content h6,
+.flip-card-container .flip-card .flip-card-back .flip-card-content h6 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.flip-card-container .flip-card .flip-card-front .flip-card-content p,
+.flip-card-container .flip-card .flip-card-back .flip-card-content p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 20px 0;
+}
+
+.flip-card-container .flip-card .flip-card-front {
+  background: url("https://demo.goodlayers.com/infinite/homepages/onepage/wp-content/uploads/sites/2/2016/05/flipbox-3.jpg");
+}
+
+.flip-card-container .flip-card .flip-card-back {
+  background: url("https://demo.goodlayers.com/infinite/homepages/onepage/wp-content/uploads/sites/2/2016/05/flipbox-5.jpg");
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+#support {
+  background: #308acb;
+  padding: 220px 0 160px 0;
+  color: #fff;
+  line-height: 1.7;
+}
+
+#support .support-content {
+  padding: 0 15px 30px;
+  text-align: center;
+}
+
+#support .support-content h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+#support .support-content h5 {
+  font-family: "Raleway", sans-serif;
+  font-size: 19px;
+  margin-top: 16px;
+}
+
+#support .support-content .button {
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 40px;
+  color: #fff;
+  border: 1px solid #2d9bea;
+  border-radius: 27px;
+  text-transform: uppercase;
+  padding: 20px 33px;
+}
+
+#support .support-content .button:hover {
+  border: 1px solid #2d9bea;
 }
 /*# sourceMappingURL=app.css.map */

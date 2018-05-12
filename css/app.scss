@@ -12,7 +12,8 @@ $source-sans-font: 'Source Sans Pro',
 sans-serif;
 $break-tablet: 768px;
 * {
-    blue-box-sizing: border-blue-box;
+    -webkit-box-sizing: border-blue-box;
+    box-sizing: border-blue-box;
     margin: 0;
     padding: 0;
 }
@@ -62,7 +63,7 @@ p {
         text-transform: uppercase;
         padding: 0 15px;
     }
-    .intro-blue-box {
+    .intro-box {
         margin: 0 40px 30px 0;
         padding: 0 15px;
         &.last {
@@ -81,7 +82,7 @@ p {
             margin-bottom: 20px;
             line-height: 1.7;
         }
-        .intro-blue-box-icon {
+        .intro-box-icon {
             margin-bottom: 28px;
             i {
                 font-size: 30px;
@@ -104,7 +105,6 @@ p {
     padding: 120px 0;
     min-height: 100vh;
     .accordion {
-        //width: 70%;
         background: none;
     }
     .accordion-title {
@@ -136,7 +136,7 @@ p {
         font-weight: 200;
         background: #308acb;
         padding: 8px 15px;
-        width: 52.11px;
+        width: 52px;
         text-align: center;
     }
     .is-active .accordion-title::before {
@@ -184,8 +184,15 @@ p {
         padding: 75px 80px 50px;
         line-height: 1.7;
         text-align: center;
+        @media screen and (min-width: $break-tablet) {}
         .benefit-item-icon {
             margin-bottom: 28px;
+            i {
+                font-size: 25px;
+                padding: 17px;
+                background: #2e2e2e;
+                border-radius: 50%;
+            }
         }
         h4 {
             font-family: $raleway-font;
@@ -215,5 +222,110 @@ p {
     }
     .purple {
         background: $benefit-purple-box-background;
+    }
+}
+
+$flip-card-height: 653px;
+.flip-card-container {
+    position: relative;
+    width: 250px;
+    .flip-card {
+        perspective: 1000;
+        position: absolute;
+        width: 100%;
+        backface-visibility: hidden;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        padding: 60px 50px 40px;
+        &:hover {
+            -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+        }
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            color: white;
+            top: 0;
+            left: 0;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: center;
+            line-height: 1.7;
+            opacity: 0.7;
+            .flip-card-frame {
+                margin: 15px;
+                border: 2px solid #2a80be;
+            }
+            .flip-card-content {
+                padding: 60px 50px 40px;
+                h5 {
+                    font-family: $raleway-font;
+                    font-size: 22px;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                }
+                h6 {
+                    font-family: $source-sans-font;
+                    font-size: 16px;
+                    font-weight: 300;
+                }
+                p {
+                    font-family: $source-sans-font;
+                    font-size: 16px;
+                    font-weight: 300;
+                    margin: 20px 0;
+                }
+            }
+        }
+        .flip-card-front {
+            background: url('https://demo.goodlayers.com/infinite/homepages/onepage/wp-content/uploads/sites/2/2016/05/flipbox-3.jpg');
+        }
+        .flip-card-back {
+            background: url("https://demo.goodlayers.com/infinite/homepages/onepage/wp-content/uploads/sites/2/2016/05/flipbox-5.jpg");
+            -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+        }
+    }
+}
+
+#support {
+    background: #308acb;
+    padding: 220px 0 160px 0;
+    color: $white-color;
+    line-height: 1.7;
+    .support-content {
+        padding: 0 15px 30px;
+        text-align: center;
+        h3 {
+            font-family: $raleway-font;
+            font-size: 50px;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+        h5 {
+            font-family: $raleway-font;
+            font-size: 19px;
+            margin-top: 16px;
+        }
+
+        .button {
+            font-size: 13px;
+            font-weight: 700;
+            margin-top: 40px;
+            color: $white-color;
+            border: 1px solid #2d9bea;
+            border-radius: 27px;
+            text-transform: uppercase;
+            padding: 20px 33px;
+            &:hover {
+                border: 1px solid #2d9bea;
+            }
+        }
     }
 }

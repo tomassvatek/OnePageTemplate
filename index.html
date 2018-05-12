@@ -32,24 +32,24 @@
       </a>
     </header>
     <nav>
-      <ul class="side-nav" role="navigation">
+      <ul class="side-nav" role="navigation" data-smooth-scroll>
         <li class="active">
-          <a href="">Home</a>
+          <a href="#intro">Home</a>
         </li>
         <li>
-          <a href="">Services</a>
+          <a href="#services">Services</a>
         </li>
         <li>
-          <a href="">Works</a>
+          <a href="#works">Works</a>
         </li>
         <li>
-          <a href="">News</a>
+          <a href="#news">News</a>
         </li>
         <li>
-          <a href="">Team</a>
+          <a href="#team">Team</a>
         </li>
         <li>
-          <a href="">Contact us</a>
+          <a href="#contact">Contact us</a>
         </li>
       </ul>
     </nav>
@@ -170,6 +170,34 @@
       <div class="wrapper">
         <div class="grid-x">
           <div class="cell medium-4">
+            <div class="flip-card-container">
+              <div class="flip-card">
+                <div class="flip-card-front">
+                  <div class="flip-card-frame">
+                    <div class="flip-card-content">
+                      <div class="flip-card-icon">
+                      </div>
+                      <h5>Beautiful Flip Box</h5>
+                      <h6>Caption placed here</h6>
+                      <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which
+                        I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flip-card-back">
+                  <div class="flip-card-frame">
+                    <div class="flip-card-content">
+                      <div class="flip-card-icon">
+                      </div>
+                      <h5>Beautiful Flip Box</h5>
+                      <h6>Caption placed here</h6>
+                      <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which
+                        I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="cell medium-8">
             <ul class="accordion" data-accordion>
@@ -259,10 +287,12 @@
     </section>
 
     <section id="benefit">
-      <div class="grid-x">
+      <div class="grid-x" data-equalizer>
         <div class="cell medium-4">
-          <div class="benefit-item blue">
-            <div class="benefit-item-icon"></div>
+          <div class="benefit-item blue" data-equalizer-watch>
+            <div class="benefit-item-icon">
+              <i class="fas fa-clock"></i>
+            </div>
             <h4>Save a lot of your time</h4>
             <h6>Tellus Pellente Amet</h6>
             <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy
@@ -270,8 +300,10 @@
           </div>
         </div>
         <div class="cell medium-4">
-          <div class="benefit-item red">
-            <div class="benefit-item-icon"></div>
+          <div class="benefit-item red" data-equalizer-watch>
+            <div class="benefit-item-icon">
+              <i class="far fa-comment"></i>
+            </div>
             <h4>Great customer support</h4>
             <h6>Tellus Pellente Amet</h6>
             <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy
@@ -279,8 +311,10 @@
           </div>
         </div>
         <div class="cell medium-4">
-          <div class="benefit-item purple">
-            <div class="benefit-item-icon"></div>
+          <div class="benefit-item purple" data-equalizer-watch>
+            <div class="benefit-item-icon">
+              <i class="fas fa-camera-retro"></i>
+            </div>
             <h4>Retina ready</h4>
             <h6>Tellus Pellente Amet</h6>
             <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy
@@ -288,6 +322,24 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <section id="support">
+      <div class="wrapper">
+        <div class="grid-x">
+          <div class="cell">
+            <div class="support-content">
+              <h3>Dedicated Support Team</h3>
+              <h5>Not only theme but we also provide best support</h5>
+              <button class="hollow button" href="#">Learn more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h3>Contact Us</h3>
     </section>
   </div>
 
