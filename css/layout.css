@@ -122,6 +122,7 @@
 }
 
 .wrapper {
+  position: relative;
   max-width: 550px;
   padding: 0 15px;
   margin: 0 auto;
@@ -137,6 +138,66 @@
 @media screen and (min-width: 1000px) {
   .grid-container.full {
     margin-left: 340px;
+  }
+}
+
+.overlay-nav {
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+  z-index: 100;
+}
+
+.overlay-nav .close-btn {
+  display: block;
+  font-size: 48px;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+  margin-top: 33px;
+}
+
+.overlay-nav .overlay-content {
+  position: relative;
+  top: 8%;
+  width: 85%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.overlay-nav .overlay-content li a {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+  padding: 15px 0;
+  border-bottom: 1px solid #747474;
+  text-transform: uppercase;
+}
+
+.overlay-nav .overlay-content li a:hover {
+  color: #747474;
+}
+
+@media screen and (min-width: 768px) {
+  .overlay-nav .overlay-content {
+    top: 15%;
+    width: 80%;
+    max-width: 570px;
+  }
+  .overlay-nav .overlay-content li a {
+    font-size: 25px;
   }
 }
 /*# sourceMappingURL=layout.css.map */

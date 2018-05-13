@@ -36,6 +36,136 @@ p {
   letter-spacing: 0.8px;
 }
 
+.img-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-effect:hover .overlay {
+  opacity: 1;
+}
+
+.img-effect:hover img {
+  transform: scale(1.05);
+}
+
+.img-effect .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: rgba(0, 0, 0, 0.6);
+  cursor: default;
+}
+
+.img-effect .overlay .overlay-content {
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  top: 50%;
+  padding: 0 35px;
+  text-align: center;
+}
+
+.img-effect .overlay .overlay-content a.title {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.4;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.img-effect .overlay .overlay-content .subtitle {
+  margin-bottom: 5px;
+}
+
+.img-effect .overlay .overlay-content .subtitle a {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 13px;
+  font-style: italic;
+  color: #cecece;
+  letter-spacing: 0.5px;
+  line-height: 1.55;
+  text-align: center;
+}
+
+.img-effect .overlay .overlay-content .subtitle span {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 13px;
+  font-style: italic;
+  color: #cecece;
+  letter-spacing: 0.5px;
+  line-height: 1.55;
+}
+
+.img-effect .overlay .overlay-content p {
+  display: none;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 16px 0 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .img-effect .overlay .overlay-content {
+    top: 25%;
+  }
+  .img-effect .overlay .overlay-content p {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .img-effect .overlay .overlay-content p {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .img-effect .overlay .overlay-content {
+    top: 35%;
+  }
+}
+
+.img-effect img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: all linear 0.2s;
+}
+
+.slider {
+  background: none;
+  min-height: 600px;
+}
+
+.slider .slick-prev,
+.slider .slick-next {
+  position: absolute;
+  top: -142px;
+}
+
+.slider .slick-prev:before,
+.slider .slick-next:before {
+  font-size: 75px;
+}
+
+.slider .slick-prev {
+  right: 0px;
+  left: auto;
+  margin-right: 140px;
+}
+
+.slider .slick-next {
+  right: 65px;
+}
+
 #intro {
   background: url("https://demo.goodlayers.com/infinite/homepages/onepage/wp-content/uploads/sites/2/2016/05/bg-1.jpg") no-repeat center;
   background-attachment: fixed;
@@ -50,7 +180,7 @@ p {
   font-family: "Raleway", sans-serif;
   font-size: 40px;
   font-weight: 700;
-  padding: 0 15px 60px 15px;
+  padding-bottom: 60px;
   text-transform: uppercase;
   line-height: 1.2;
   letter-spacing: 1px;
@@ -67,12 +197,10 @@ p {
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase;
-  padding: 0 15px;
 }
 
 #intro .intro-box {
   margin: 0 40px 30px 0;
-  padding: 0 15px;
 }
 
 #intro .intro-box.last {
@@ -122,6 +250,11 @@ p {
 
 #services .accordion {
   background: none;
+  padding: 15px 0 0 30px;
+}
+
+#services .accordion-item {
+  padding-left: 60px;
 }
 
 #services .accordion-title {
@@ -259,22 +392,22 @@ p {
 
 .flip-card-container {
   position: relative;
-  width: 250px;
+  min-height: 473px;
 }
 
 .flip-card-container .flip-card {
-  perspective: 1000;
-  position: absolute;
+  position: relative;
   width: 100%;
+  min-height: 473px;
+  max-height: 680px;
   backface-visibility: hidden;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  padding: 60px 50px 40px;
 }
 
-.flip-card-container .flip-card:hover {
+.flip-card-container .flip-card:hover, .flip-card-container .flip-card.hover {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
@@ -282,10 +415,11 @@ p {
 .flip-card-container .flip-card .flip-card-front,
 .flip-card-container .flip-card .flip-card-back {
   position: absolute;
-  width: 100%;
+  max-height: 680px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   color: white;
+  min-height: 100%;
   top: 0;
   left: 0;
   background-size: cover;
@@ -294,17 +428,13 @@ p {
   text-align: center;
   line-height: 1.7;
   opacity: 0.7;
-}
-
-.flip-card-container .flip-card .flip-card-front .flip-card-frame,
-.flip-card-container .flip-card .flip-card-back .flip-card-frame {
-  margin: 15px;
-  border: 2px solid #2a80be;
+  padding: 15px;
 }
 
 .flip-card-container .flip-card .flip-card-front .flip-card-content,
 .flip-card-container .flip-card .flip-card-back .flip-card-content {
-  padding: 60px 50px 40px;
+  min-height: 100%;
+  padding: 40px 30px 40px;
 }
 
 .flip-card-container .flip-card .flip-card-front .flip-card-content h5,
@@ -342,10 +472,15 @@ p {
 
 #works {
   padding: 95px 0 60px 0;
-  background: #f3f3f3;
+  background: #F3F3F3;
+}
+
+#works .work-title {
+  margin-bottom: 60px;
 }
 
 #works .work-title h3 {
+  display: inline-block;
   font-size: 41px;
   color: #0a0a0a;
 }
@@ -354,6 +489,63 @@ p {
   font-size: 16px;
   margin-bottom: 5px;
   color: #747474;
+}
+
+#works .work-title .work-subtitle span {
+  display: none;
+  color: #747474;
+  height: 32px;
+  margin: 0px 40px 0px 25px;
+  border-right-width: 1px;
+  border-right-style: solid;
+  transform: rotate(36deg);
+  -moz-transform: rotate(36deg);
+  -webkit-transform: rotate(36deg);
+  transform-origin: 0% 100%;
+  -moz-transform-origin: 0% 100%;
+  -webkit-transform-origin: 0% 100%;
+}
+
+#works .work-title .work-subtitle a {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #747474;
+}
+
+@media screen and (min-width: 1130px) {
+  #works .work-title .work-subtitle {
+    display: inline-block;
+  }
+  #works .work-title .work-subtitle span {
+    display: inline-block;
+  }
+}
+
+#works .slider {
+  min-height: 330px;
+}
+
+@media screen and (min-width: 370px) {
+  #works .slider {
+    min-height: 400px;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  #works .slider {
+    min-height: 600px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #works .slider {
+    min-height: 430px;
+  }
+}
+
+#works .works-box {
+  padding-right: 30px;
 }
 
 #framework {
@@ -424,13 +616,15 @@ p {
 }
 
 #news {
-  padding: 100px 15px 40px;
+  position: relative;
+  padding: 100px 0 40px;
   font-family: "Source Sans Pro", sans-serif;
   line-height: 1.7;
   background: url("https://demo.goodlayers.com/infinite/homepages/onepage/wp-content/uploads/sites/2/2016/05/bg-5.jpg") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   color: #fff;
+  overflow: hidden;
 }
 
 #news .news-title {
@@ -450,7 +644,8 @@ p {
 }
 
 #news .news-box {
-  padding: 0 15px 30px;
+  padding-bottom: 30px;
+  padding-right: 30px;
 }
 
 #news .news-box .news-box-img {
@@ -531,21 +726,6 @@ p {
 
 #team .team-box {
   margin-bottom: 50px;
-}
-
-#team .team-box .team-box-img {
-  overflow: hidden;
-}
-
-#team .team-box .team-box-img img {
-  max-width: 100%;
-  max-height: 100%;
-  transition: all linear 0.2s;
-}
-
-#team .team-box .team-box-img img:hover {
-  transform: scale(1.05);
-  opacity: 0.9;
 }
 
 #team .team-box .team-box-content {
@@ -659,6 +839,7 @@ p {
 #contact .contact-social {
   text-align: center;
   line-height: 1.7;
+  margin-bottom: 60px;
 }
 
 #contact .contact-social li {
@@ -683,9 +864,82 @@ p {
   letter-spacing: 1px;
 }
 
-#contact .contact-social #form input[type=text],
-#contact .contact-social #form input[type=email] {
-  padding: 0 7px;
+#contact #form {
+  position: relative;
+  font-family: "Source Sans Pro", sans-serif;
+  max-width: 670px;
+  margin: 0 auto;
+}
+
+#contact #form input[type=text],
+#contact #form input[type=email], #contact #form textarea {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 24px 22px;
+  color: #6A6A6A;
   margin-bottom: 14px;
+}
+
+#contact textarea {
+  padding: 15px 22px;
+  height: 120px;
+}
+
+#contact .submit {
+  display: block;
+  margin: 0 auto;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  background: #2F2F2F;
+  text-transform: uppercase;
+  padding: 15px 33px;
+  min-width: 200px;
+}
+
+#contact .is-invalid-input:not(:focus) {
+  background: none;
+  border-color: #cacaca;
+}
+
+#contact .alert {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #9b9b9b;
+  position: absolute;
+  width: 100%;
+  bottom: -55px;
+  background: none;
+  border-color: #F7E700;
+  border-width: 2px;
+  padding: 6px 20px;
+  margin: 0 15px;
+}
+
+#contact .form-error {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #9b9b9b;
+  margin-bottom: 15px;
+  margin-left: 2px;
+}
+
+#contact ::placeholder {
+  font-weight: 400;
+  color: #6A6A6A;
+  opacity: 1;
+}
+
+#contact :-ms-input-placeholder {
+  font-weight: 400;
+  color: #6A6A6A;
+}
+
+#contact ::-ms-input-placeholder {
+  font-weight: 400;
+  color: #6A6A6A;
 }
 /*# sourceMappingURL=app.css.map */
