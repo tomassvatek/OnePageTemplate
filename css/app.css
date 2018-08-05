@@ -788,7 +788,9 @@ p {
 }
 
 #support {
-  background: #308acb;
+  background: url("https://demo.goodlayers.com/infinite/homepages/onepage/wp-content/uploads/sites/2/2016/05/bg-2.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
   padding: 220px 0 160px 0;
   color: #fff;
   line-height: 1.7;
@@ -872,7 +874,8 @@ p {
 }
 
 #contact #form input[type=text],
-#contact #form input[type=email], #contact #form textarea {
+#contact #form input[type=email],
+#contact #form textarea {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -910,7 +913,7 @@ p {
   color: #9b9b9b;
   position: absolute;
   width: 100%;
-  bottom: -55px;
+  bottom: -70px;
   background: none;
   border-color: #F7E700;
   border-width: 2px;
